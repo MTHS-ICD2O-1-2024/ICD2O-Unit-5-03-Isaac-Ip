@@ -25,7 +25,7 @@ function findMovieType () {
 
   } else if (age >= 5) {
     // output
-    document.getElementById('result').innerHTML = 'You can watch a PG-13 movie alone.'
+    document.getElementById('result').innerHTML = 'You can watch a G or PG movie alone.'
 
   } else {
     // output
