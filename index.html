@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Positive and Negative #, in JS" />
+  <meta name="description" content="Watch a Movie, in JS" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Isaac Ip" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
   <link rel="manifest" href="./site.webmanifest" />
-  <title>Positive and Negative #, in JS</title>
+  <title>Watch a Movie, in JS</title>
 </head>
 
 <body>
@@ -24,13 +24,13 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Positive and Negative #, in JS</span>
+        <span class="mdl-layout-title">Watch a Movie, in JS</span>
       </div>
     </header>
       <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/positive_negative.jpg" alt="positive_negative">
-    <h1>&nbsp Select what kind of number you would like:</h1>
+        <img src="./images/movie_ratings.jpg" alt="positive_negative">
+    <h1>&nbsp Enter in your age:</h1>
 
       </div>
       <!-- Numeric textfield for number-->
@@ -41,6 +41,7 @@
           <input class="mdl-textfield__input" type="number" pattern="-?[0-9]*(\.[0-9]+)?" id="age" step="1" />
           <label class="mdl-textfield__label" for="age">Age Here ...</label>
           <span class="mdl-textfield__error">Input is not a number!</span> 
+          </div>
         <br>
         <br>
         <!-- Raised button with ripple -->
@@ -50,7 +51,6 @@
         </button>
       </form>
       <div id="result">
-        <p>The random number is:</p>
       </div>
       <div id="thank-you-message">
       </div>
