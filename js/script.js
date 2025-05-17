@@ -7,6 +7,15 @@
 "use strict"
 
 /**
+ * Check servie worker.
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICD2O-Unit-6-02-Isaac-Ip/sw.js", {
+    scope: "/ICD2O-Unit-6-02-Isaac-Ip/",
+  })
+}
+
+/**
  * This function selects a random number depending on the user's choice.
  */
 function findMovieType () {
