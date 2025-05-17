@@ -25,7 +25,7 @@ function findMovieType () {
   // store age in localStorage
   localStorage.setItem('age', age)
   // process
-  if (age >= 17) {
+  if (localStorage.age >= 17) {
     // output
     document.getElementById('result').innerHTML = 'You can watch an R movie alone.'
 
