@@ -18,22 +18,23 @@ if (navigator.serviceWorker) {
 /**
  * This function selects a random number depending on the user's choice.
  */
-function findMovieType () {
+function findMovieType() {
 
   // input
   const age = parseInt(document.getElementById('age').value)
   // store age in localStorage
   localStorage.setItem('age', age)
+  let ageStorage = localStorage.getItem('age')
   // process
-  if (localStorage.age >= 17) {
+  if (ageStorage >= 17) {
     // output
     document.getElementById('result').innerHTML = 'You can watch an R movie alone.'
 
-  } else if (age >= 13) {
+  } else if (ageStorage >= 13) {
     // output
     document.getElementById('result').innerHTML = 'You can watch a PG-13 movie alone.'
 
-  } else if (age >= 5) {
+  } else if (ageStorage >= 5) {
     // output
     document.getElementById('result').innerHTML = 'You can watch a G or PG movie alone.'
 
