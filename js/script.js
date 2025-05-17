@@ -13,7 +13,7 @@ if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICD2O-Unit-6-02-Isaac-Ip/sw.js", {
     scope: "/ICD2O-Unit-6-02-Isaac-Ip/",
   });
-
+}
 
 /**
  * This function selects a random number depending on the user's choice.
@@ -46,29 +46,3 @@ function findMovieType() {
         "Thank you for verifying your age.";
     }
   }
-
-function updateAge() {
-  let ageStorage = parseInt(localStorage.getItem("age"));
-
-  // process
-  if (ageStorage >= 17) {
-    // output
-    document.getElementById("result").innerHTML =
-      "You can watch an R movie alone.";
-  } else if (ageStorage >= 13) {
-    // output
-    document.getElementById("result").innerHTML =
-      "You can watch a PG-13 movie alone.";
-  } else if (ageStorage >= 5) {
-    // output
-    document.getElementById("result").innerHTML =
-      "You can watch a G or PG movie alone.";
-  } else {
-    // output
-    document.getElementById("result").innerHTML =
-      "You are too young to watch movies.";
-  }
-  // Thank you message
-  document.getElementById("thank-you-message").innerHTML =
-    "Thank you for verifying your age.";
-}
