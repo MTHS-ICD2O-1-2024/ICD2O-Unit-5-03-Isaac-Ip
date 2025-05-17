@@ -21,8 +21,9 @@ if (navigator.serviceWorker) {
 function findMovieType () {
 
   // input
-  let age = localStorage.age ? Number(localStorage.age) : 0
-
+  const age = parseInt(document.getElementById('age').value)
+  // store age in localStorage
+  localStorage.setItem('age', age)
   // process
   if (age >= 17) {
     // output
